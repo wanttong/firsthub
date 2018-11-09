@@ -1,0 +1,96 @@
+
+/*使用通配符选择器设置所有元素的内外边距都为 0;可不设置*/
+html,body{
+  height: 100%;
+}
+body{
+  display: flex;          /*整体布局*/
+  flex-direction: column; /*整体布局*/
+  font-size: 12px;        /*字体大小*/
+  font-family: arial;     /*字体族*/
+}
+
+/*导航栏设置*/
+.page-header{
+  padding-top: 20px;      /*距离上边距*/
+  padding-right: 10px;    /*距离右边距*/
+  text-align: right;      /*文字右对齐*/
+}
+.page-header nav a{
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  margin-left: 20;
+}
+.page-header nav a:last-child{
+  display: inline-block;  /*处理行内非替换元素的高宽*/
+  width: 60px;
+  height: 23px;
+  background: #38f;
+  color: #fff;
+  text-decoration: none;  /*无文本修饰*/
+  text-align: center;     /*文本水平对齐*/
+  line-height: 23px;      /*行高*/
+}
+/*logo和输入框*/
+.page-mainer{
+  flex: 1;
+  text-align: center;
+  margin-top: 100px;
+}
+.page-mainer .logo-container img{
+  width: 270px;
+  height: 129px;
+  margin-bottom: 22px;
+}
+.form-container form{
+  display: flex;
+  justify-content: center;
+}
+.form-container .form-search{
+  display: inline-block;
+  width: 539px;
+  height: 34px;
+  border: 1px solid #b6b6b6;
+  border-right: 0;
+  outline: none;
+  line-height: 34px;
+  padding-left: 10px;
+}
+.form-container .submit-btn{
+  width: 100px;
+  height: 36px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: #3385ff;
+  border: 1px solid #3385ff;
+  outline: none;
+  cursor: pointer;
+}
+.form-container .submit-btn:hover{
+  opacity: 0.8;
+}
+/*脚部*/
+.page-footer{
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 11px;
+}
+
+.page-footer .footer-info{
+  margin-top: 15px;
+  color: #999;
+}
+
+.page-footer .footer-info a{
+  color: #999;
+  margin-right: 15px;
+}
+.page-footer .footer-info a:last-child{
+  margin-right: 0;
+}
+.page-footer .qrcode-container img{
+  width: 50px; 
+  height: 50px;
+}
